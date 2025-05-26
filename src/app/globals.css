@@ -40,8 +40,63 @@ body {
 
 .text-shadow {
   text-shadow: 5px 7px 0px rgba(0, 0, 0, 1);
+  animation: none;
 }
 
 .box-shadow {
   box-shadow: 5px 7px 0px rgba(0, 0, 0, 1);
+  animation: none;
+}
+
+.text-shadow:hover {
+  animation: miniJumpTextShadow 0.3s ease-in-out;
+}
+.box-shadow:hover {
+  animation: miniJumpBoxShadow 0.3s ease-in-out;
+}
+/* Normal (desktop) */
+@keyframes miniJumpBoxShadow {
+  0% {
+    box-shadow: 5px 7px 0px rgba(0, 0, 0, 1);
+  }
+  50% {
+    box-shadow: 7px 10px 0px rgba(0, 0, 0, 1);
+  }
+  100% {
+    box-shadow: 5px 7px 0px rgba(0, 0, 0, 1);
+  }
+}
+@keyframes miniJumpTextShadow {
+  0% {
+    text-shadow: 5px 7px 0px rgba(0, 0, 0, 1);
+  }
+  50% {
+    text-shadow: 7px 10px 0px rgba(0, 0, 0, 1);
+  }
+  100% {
+    text-shadow: 5px 7px 0px rgba(0, 0, 0, 1);
+  }
+}
+
+/* Untuk layar kecil */
+@media screen and (max-width: 640px) {
+  @keyframes miniJumpBoxShadowMobile {
+    0% {
+      box-shadow: 4px 5px 0px rgba(0, 0, 0, 1);
+    }
+    50% {
+      box-shadow: 6px 8px 0px rgba(0, 0, 0, 1);
+    }
+    100% {
+      box-shadow: 4px 5px 0px rgba(0, 0, 0, 1);
+    }
+  }
+
+  .box-shadow {
+    animation: miniJumpBoxShadowMobile 1s ease-in-out;
+  }
+
+  .box-shadow:hover {
+    animation: miniJumpBoxShadowMobile 1s ease-in-out infinite;
+  }
 }

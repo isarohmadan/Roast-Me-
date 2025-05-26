@@ -20,9 +20,9 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center justify-center py-8">
-      <div className="relative ">
-        <h1 className="text-[128px] font-normal text-[#d70654] font-['Jaro'] text-shadow-xl text-shadow ">
+    <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center justify-center py-8 w-full px-6">
+      <div className="wrapper">
+        <h1 className="text-[64px] leading-normal md:text-[128px]  font-normal text-[#d70654] text-shadow-xl text-shadow ">
           Roast Me!
         </h1>
       </div>
@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
 
       <Button
         onClick={handleSubmit}
-        className="bg-[#d70654] text-white py-3 px-24 font-['Jaro'] font-bold text-[32px] mt-8 hover:text-black box-shadow transition-colors duration-300"
+        className="bg-[#d70654] text-white py-1 px-24  md:py-3 md:px-24 font-bold text-[32px] mt-8 hover:text-black box-shadow transition-colors duration-300"
       >
         GOW!
       </Button>

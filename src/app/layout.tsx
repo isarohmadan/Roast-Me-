@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jaro}} antialiased`}>{children}</body>
+      <body className={` ${jaro.className} ${jaro.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
