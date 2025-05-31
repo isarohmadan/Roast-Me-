@@ -14,18 +14,20 @@ const InputField: React.FC<InputFieldProps> = ({
   error,
   className = "",
   containerClassName = "",
+  ...props
 }) => {
   return (
     <div className={`mb-4 ${containerClassName}`}>
       {label && (
-        <label className="block text-gray-700 border text-sm font-bold mb-2">
-          {label}
-        </label>
+        <label className="block border text-sm font-bold mb-2">{label}</label>
       )}
       <input
-        className={`bg-[#d9d9d9] shadow appearance-none border w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+        type="checkbox"
+        className={`bg-[#d9d9d9] shadow appearance-none border leading-tight w-[20px] focus:outline-none focus:shadow-outline ${
           error ? "border-red-500" : ""
         } ${className}`}
+        {...props}
+        placeholder={label}
       />
       {error && <p className="text-red-500 text-xs italic mt-1">{error}</p>}
     </div>
