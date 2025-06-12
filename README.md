@@ -1,7 +1,7 @@
 # 🔥 Roast Me – AI-Powered Instagram Roast Generator
 
 **Role:** Fullstack Developer  
-**Tech Stack:** Next.js, JavaScript, Apify API, Gemini 2.5 AI
+**Tech Stack:** Next.js, Typescript, Apify API, Gemini 2.5 AI
 
 ## Overview  
 Roast Me is a fun and interactive web application where users can generate AI-powered "roasts" based on public Instagram profile data. Built entirely with Next.js, the app uses Apify to scrape Instagram profile data and Gemini 2.5 to generate witty, personalized roast responses. It’s a creative project that blends AI, automation, and humor into a seamless experience.
